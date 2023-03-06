@@ -1,6 +1,6 @@
 "use strict";
 function getitems() {
-    return fetch('./shopitems.json')
+    return fetch('/shopitems.json')
         .then(shop => shop.json())
         .then(shop => { return shop; });
 }
